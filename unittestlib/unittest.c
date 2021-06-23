@@ -24,7 +24,7 @@ int main() {
 	double expDy[3] = { 4.38, 7.13,10 };
 	int expOut[10] = { 1, 0, 0, 0, 0, 1, 1, 0, 1, 2};
 
-	//ÒÅÑÒÛ ÍÀ ÏÐÎÂÅÐÊÓ, ÒÐÅÓÃÎËÜÍÈÊ ËÈ
+	//TEST OF POSSIBILITY OF CREATING A TRIANGLE
 
 	for (int i = 0; i < 7; i++) {
 		expected_output = expOut[i];
@@ -33,7 +33,7 @@ int main() {
 		ASSERT(expected_output != obtainted_output, "Test failed. Doesn't work for your coordinates.");
 	}
 
-	// ÒÅÑÒÛ ÍÀ ÏÐÎÂÅÐÊÓ ÂÕÎÄÈÌÎÑÒÈ ÒÎ×ÊÈ Â ÒÐÅÓÃÎËÜÍÈÊ
+	// TEST OF DIRECTION OF POINT
 
 	for (int i = 7; i < 10; i++) {
 		expected_output = expOut[i];
